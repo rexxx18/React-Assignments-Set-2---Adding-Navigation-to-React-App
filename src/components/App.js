@@ -23,7 +23,7 @@ class App extends Component {
           <Link to="/about">About</Link>
           <Switch>
             <Route path="/about" component={About} />
-            <Route path="/" component={Home} />
+            <Route path="/" exact component={Home} />
             <Route path="/" component={Invalid} />
           </Switch>
           <LocationDisplayComponent />
