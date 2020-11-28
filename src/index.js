@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
-function generateCodeFromObject(obj){
-    //return a code generated string
-   }
-   
-module.exports=generateCodeFromObject;
+import { BrowserRouter } from "react-router-dom";
 
+import App from "./components/App";
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>,
+  rootElement
+);
 
 // ReactDOM.render(<App />, document.getElementById("root"));
